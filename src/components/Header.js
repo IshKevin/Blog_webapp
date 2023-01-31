@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import './HeaderStyle.css'
 
 const Header = () => {
@@ -9,8 +10,10 @@ const Header = () => {
         <h1>The Safari Blog</h1>
         </div>
         <div className='nav'>
-            <Link to='./Signup.js'>Signup</Link>
+            <Link to='/'>Home</Link>
+            <Link to='Signup'>Signup</Link>
             <Link to='#'>Login</Link>
+            
          </div>   
     </div>
   )

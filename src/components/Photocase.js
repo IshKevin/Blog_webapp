@@ -2,7 +2,18 @@ import React from 'react'
 
 const Photocase = () => {
   return (
-    <div>Photocase</div>
+    <div>
+      <div className='photocase'>
+        <div className='photocase__img1'>
+          image1
+        </div>
+        <div className='photocase__img2'>
+        </div>
+        <div className='photocase__img3'>
+        </div>
+        </div>   
+
+    </div>
   )
 }
 

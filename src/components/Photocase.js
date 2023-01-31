@@ -5,7 +5,7 @@ const Photocase = () => {
     <div>
       <div className='photocase'>
         <div className='photocase__img1'>
-          image1
+          
         </div>
         <div className='photocase__img2'>
         </div>

@@ -5,8 +5,8 @@ import Signupform from './components/Signupform'
 const Signup = () => {
   return (
     <div>
-      <Header/>
-      <Signupform/>
+      <Header />
+      <Signupform />
     </div>
   )
 }

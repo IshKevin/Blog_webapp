@@ -1,0 +1,38 @@
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #7FC2ED;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+}
+
+.log{
+    text-align: center;
+    padding-right: 30px;
+    font-size: 35px;
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    
+    padding: 30px;
+    font-size: 20px;
+    justify-content: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: #384955;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 35px;
+}

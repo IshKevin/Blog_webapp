@@ -4,9 +4,8 @@ import Welcome from './components/Welcome';
 function App() {
   return (
     <div className="App">
-    <Header/>
-    {/* <h1>App</h1>
-    <Welcome /> */}
+    <Header className="hheader"/>
+    <Welcome className="welcome"/>
     </div>
   );
 }

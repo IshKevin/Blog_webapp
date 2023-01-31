@@ -1,10 +1,8 @@
-import Header from './components/Header';
-import Photocase from './components/Photocase';
-import Welcome from './components/Welcome';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import Signup from './components/Signup';
+import Signup from './components/Signupform';
 import Login from './Login';
+import DashBoard from './DashBoard';
 
 function App() {
   return (
@@ -14,6 +12,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="Signup" element={<Signup/>}/>
       <Route path="Login" element={<Login/>}/>
+      <Route path="*" element={<DashBoard/>}/>
     </Routes>
     </BrowserRouter>
   );

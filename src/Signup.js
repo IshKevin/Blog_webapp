@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from './components/Header'
+import Signupform from './components/Signupform'
 
 const Signup = () => {
   return (
-    <div>Signup</div>
+    <div>
+      <Header/>
+      <Signupform/>
+    </div>
   )
 }
 

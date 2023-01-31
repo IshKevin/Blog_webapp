@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Loginform = () => {
   return (
@@ -9,7 +10,7 @@ const Loginform = () => {
             <label for ='password'>Password</label>
             <input type='password' id='password' name='password' placeholder='Password'/>
             <button type='submit' value='Login'>
-                Login
+                <Link to='DashBoard'>Login</Link>
             </button>
         </form>
     </div>

@@ -3,16 +3,7 @@ import React from 'react'
 const Photocase = () => {
   return (
     <div>
-      <div className='photocase'>
-        <div className='photocase__img1'>
-          
-        </div>
-        <div className='photocase__img2'>
-        </div>
-        <div className='photocase__img3'>
-        </div>
-        </div>   
-
+      <h1>Photocase</h1>
     </div>
   )
 }

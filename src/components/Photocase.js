@@ -3,7 +3,7 @@ import './Photocase.css'
 
 const Photocase = () => {
   return (
-    <div>
+    <div className='post'>
       <div className="post1">
       <img src={process.env.PUBLIC_URL + '/Images/pexels-pixabay-34098.jpg'} alt="Photocase" />
       <div className="postInfo">
@@ -14,6 +14,13 @@ const Photocase = () => {
         <span className='postTitle'>making perfect image</span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
+        <div className="postDesc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
 
         <div className="post1">
@@ -26,6 +33,13 @@ const Photocase = () => {
         <span className='postTitle'>making perfect image</span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
+        <div className="postDesc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
 
         <div className="post1">
@@ -38,6 +52,13 @@ const Photocase = () => {
         <span className='postTitle'>making perfect image</span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
+        <div className="postDesc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
 
         <div className="post1">
@@ -50,6 +71,13 @@ const Photocase = () => {
         <span className='postTitle'>making perfect image</span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
+        <div className="postDesc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
 
         <div className="post1">
@@ -62,6 +90,13 @@ const Photocase = () => {
         <span className='postTitle'>making perfect image</span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
+        <div className="postDesc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
 
         <div className="post1">
@@ -74,6 +109,13 @@ const Photocase = () => {
         <span className='postTitle'>making perfect image</span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
+        <div className="postDesc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
     </div>
   )

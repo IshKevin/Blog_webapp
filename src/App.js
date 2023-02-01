@@ -3,6 +3,7 @@ import Home from './Home';
 import Signup from './components/Signupform';
 import Login from './Login';
 import DashBoard from './DashBoard';
+import SinglePost from './SinglePost';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="Signup" element={<Signup/>}/>
       <Route path="Login" element={<Login/>}/>
       <Route path="*" element={<DashBoard/>}/>
+      <Route path="SinglePost" element={<SinglePost/>}/>
     </Routes>
     </BrowserRouter>
   );

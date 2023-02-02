@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './signup.css'     
+import './signup.css' 
+import Header from './Header'    
 
 const Signup = () => {
   return (
-    <div className="form">
-      <form action='#'>
+    <div >
+      <Header className="header-display" />
+      <form className="form-signup" action='#'>
         <label for='username'>Username</label><br/>
         <input type='text' id='username' name='username' placeholder='Username' /> <br/>
         <labale for="email">Email</labale><br />

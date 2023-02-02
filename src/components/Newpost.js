@@ -1,9 +1,19 @@
 import React from 'react'
+import './Newpost.css'
 
 const Newpost = () => {
   return (
     <div>
-        crete new post here
+        <from>
+          <label for='title'>Title</label><br/>
+          <input type='text' id='title' name='title' placeholder='Title'/><br/>
+          <label for='content'>Uplaod image</label><br/>
+          <input type='file' id='content' name='content' placeholder='Upload image'/><br/>
+          <label for='content'>Content</label><br/>
+          <textarea id='content' name='content' placeholder='Content'></textarea><br/>
+          <button type='submit' value='Post'>Post</button>
+
+        </from>
     </div>
   )
 }

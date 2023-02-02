@@ -5,8 +5,16 @@ const Manage = () => {
   return (
     <div>
         <div className='title-head'>
-          <span>Title</span>
-          <span>Action</span>
+          <div>Title</div>
+          <div>Action</div>
+        </div>
+        <div className='title-post'>
+          <div>Post 1</div>
+          <div>
+            <div> AiOutlineEdit</div>
+            <div>log2</div>
+          </div>
+
         </div>
     </div>
   )

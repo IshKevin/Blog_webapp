@@ -4,6 +4,8 @@ import Signup from './components/Signupform';
 import Login from './Login';
 import DashBoard from './DashBoard';
 import SinglePost from './SinglePost';
+import Manage from './Manage';
+import Newpost from './Newpost';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path="Login" element={<Login/>}/>
       <Route path="*" element={<DashBoard/>}/>
       <Route path="SinglePost" element={<SinglePost/>}/>
+      <Route path="Manage" element={<Manage/>}/>
+      <Route path="Newpost" element={<Newpost/>}/>
     </Routes>
     </BrowserRouter>
   );

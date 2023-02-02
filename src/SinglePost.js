@@ -6,6 +6,7 @@ const SinglePost = () => {
   return (
     <div>
       <Header />
+      <img src={process.env.PUBLIC_URL + '/Images/pexels-pixabay-34098.jpg'} alt="Photocase" />
       <div className='single-post'>
       <h1 className="singlePostTitle">
           Lorem ipsum dolor

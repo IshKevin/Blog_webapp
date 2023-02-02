@@ -7,6 +7,10 @@ const Dashboard = () => {
        <div className='heads'>
          <h1>Dashboard</h1>
          </div>
+         <div div className ="dash">
+            <button className='button-dash'>Manage</button><br/>
+            <button className='button-dash'>New Post</button>
+        </div>
     </div>
   )
 }

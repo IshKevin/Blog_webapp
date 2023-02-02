@@ -1,18 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './signup.css'     
 
 const Signup = () => {
   return (
-    <div>
+    <div className="form">
       <form action='#'>
-        <label for='username'>Username</label>
-        <input type='text' id='username' name='username' placeholder='Username' />
-        <labale for="email">Email</labale>
-        <input type="email" id="email" name="email" placeholder="Email" />
-        <label for='password'>Password</label>
-        <input type='password' id='password' name='password' placeholder='Password' />
-        <label for='password'>Confirm Password</label>
-        <input type='password' id='password' name='password' placeholder='Confirm Password' />
+        <label for='username'>Username</label><br/>
+        <input type='text' id='username' name='username' placeholder='Username' /> <br/>
+        <labale for="email">Email</labale><br />
+        <input type="email" id="email" name="email" placeholder="Email" /> <br />
+        <label for='password'>Password</label><br/>
+        <input type='password' id='password' name='password' placeholder='Password' /><br />
+        <label for='password'>Confirm Password</label><br/>
+        <input type='password' id='password' name='password' placeholder='Confirm Password' /><br />
         <button type='submit' value='Signup'>
           <Link to='DashBoard'>Signup</Link>  
         </button>

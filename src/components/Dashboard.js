@@ -15,7 +15,6 @@ const Dashboard = () => {
             <button className='button-dash' onClick={displaymanager}>Manage</button><br/>
             <button className='button-dash'>New Post</button>
         </div>
-        displaymanager()
     </div>
   )
 }

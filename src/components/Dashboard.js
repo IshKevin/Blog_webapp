@@ -1,20 +1,46 @@
-import React from 'react'
+import React, { Children } from 'react'
 import './Dashboard.css'
 import Manage from './Manage'
+import {NavLink} from 'react-router-dom'
 
-const Dashboard = () => {
+const Dashboard = (Children) => {
+    const menuitems = [{
+        path:'/manage',
+        name:'Manage'
+         },
+        {
+        path:'/newpost',
+        name:'New Post'
+        }
+
+    ]
     const displaymanager = () => {
        return <Manage/>
     }
   return (
     <div>
-       <div className='heads'>
+       <header className='heads'>
          <h1>Dashboard</h1>
-         </div>
+         </header>
          <div div className ="dash">
-            <button className='button-dash' onClick={displaymanager}>Manage</button><br/>
-            <button className='button-dash'>New Post</button>
+            {/* <button className='button-dash' onClick={displaymanager}>Manage</button><br/>
+            <button className='button-dash'>New Post</button> */}
+           <div>
+              {menuitems.map((item, index) => (
+              <NavLink to={item.path} key={index}>
+              {item.name}
+              <div className='line'>
+                {item.name}
+              </div>
+              </NavLink>
+            ))}
+          </div>
+          
+
         </div>
+        {/* <main>
+            {Children}
+          </main> */}
     </div>
   )
 }

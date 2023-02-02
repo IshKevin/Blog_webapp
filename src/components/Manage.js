@@ -3,7 +3,7 @@ import React from 'react'
 const Manage = () => {
   return (
     <div>
-        <h1>Manage</h1>
+        <p>Manage</p>
     </div>
   )
 }

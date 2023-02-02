@@ -4,8 +4,8 @@ import Signup from './components/Signupform';
 import Login from './Login';
 import DashBoard from './DashBoard';
 import SinglePost from './SinglePost';
-import Manage from './Manage';
-import Newpost from './Newpost';
+import Manage from './components/Manage';
+import Newpost from './components/Newpost';
 
 function App() {
   return (

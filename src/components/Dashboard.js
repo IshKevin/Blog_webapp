@@ -1,9 +1,10 @@
 import React from 'react'
 import './Dashboard.css'
+import Manage from './Manage'
 
 const Dashboard = () => {
     const displaymanager = () => {
-        console.log('manage')
+       return <Manage/>
     }
   return (
     <div>
@@ -14,6 +15,7 @@ const Dashboard = () => {
             <button className='button-dash' onClick={displaymanager}>Manage</button><br/>
             <button className='button-dash'>New Post</button>
         </div>
+        displaymanager()
     </div>
   )
 }

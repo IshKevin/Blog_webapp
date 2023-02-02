@@ -12,7 +12,7 @@ const Photocase = () => {
           <span className="post_cat">FLIM</span>
           <span className="post_cat">PHOTO</span>
         </div>
-        <span className='postTitle'><Link to='DashBoard'>Signup</Link>
+        <span className='postTitle'><Link to='SinglePost'>making perfect image</Link>
         </span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
@@ -32,8 +32,8 @@ const Photocase = () => {
           <span className="post_cat">FLIM</span>
           <span className="post_cat">PHOTO</span>
         </div>
-        <span className='postTitle'>
-          <Link to='/SinglePost'/>making perfect image</span>
+        <span className='postTitle'><Link to='SinglePost'>making perfect image</Link>
+        </span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
         <div className="postDesc">
@@ -52,7 +52,8 @@ const Photocase = () => {
           <span className="post_cat">FLIM</span>
           <span className="post_cat">PHOTO</span>
         </div>
-        <span className='postTitle'>making perfect image</span>
+        <span className='postTitle'><Link to='SinglePost'>making perfect image</Link>
+        </span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
         <div className="postDesc">
@@ -71,7 +72,8 @@ const Photocase = () => {
           <span className="post_cat">FLIM</span>
           <span className="post_cat">PHOTO</span>
         </div>
-        <span className='postTitle'>making perfect image</span>
+        <span className='postTitle'><Link to='SinglePost'>making perfect image</Link>
+        </span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
         <div className="postDesc">
@@ -90,7 +92,8 @@ const Photocase = () => {
           <span className="post_cat">FLIM</span>
           <span className="post_cat">PHOTO</span>
         </div>
-        <span className='postTitle'>making perfect image</span>
+        <span className='postTitle'><Link to='SinglePost'>making perfect image</Link>
+        </span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
         <div className="postDesc">
@@ -109,7 +112,8 @@ const Photocase = () => {
           <span className="post_cat">FLIM</span>
           <span className="post_cat">PHOTO</span>
         </div>
-        <span className='postTitle'>making perfect image</span>
+        <span className='postTitle'><Link to='SinglePost'>making perfect image</Link>
+        </span>
         <span className="postDate">Posted on 12th May, 2018</span>
         </div>
         <div className="postDesc">

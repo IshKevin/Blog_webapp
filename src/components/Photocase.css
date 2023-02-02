@@ -35,6 +35,11 @@ img{
     font-weight: 700;
     margin-top: 5px;
     cursor: pointer;
+    color: #626e74;
+}
+a{
+    text-decoration: none;
+    color: #626e74;
 }
 
 .postDate{

@@ -1,6 +1,17 @@
+/*  */
 .heads{
     background-color: #384955;
     color: white;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.man-disp{
+    flex-basis: 100%;
 }
 h1{
     color: aliceblue;
@@ -23,6 +34,7 @@ h1{
     
 
 }
+
 
 .button-dash{
     border: 0;

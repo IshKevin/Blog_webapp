@@ -6,6 +6,7 @@ import DashBoard from './DashBoard';
 import SinglePost from './SinglePost';
 import Manage from './components/Manage';
 import Newpost from './components/Newpost';
+import Dash2disp from './Dash2disp';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="SinglePost" element={<SinglePost/>}/>
       <Route path="Manage" element={<Manage/>}/>
       <Route path="Newpost" element={<Newpost/>}/>
+      <Route path="Dash2disp" element={<Dash2disp/>}/>
     </Routes>
     </BrowserRouter>
   );

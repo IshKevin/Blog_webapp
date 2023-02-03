@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import Manage from './Manage'
 
@@ -13,7 +14,11 @@ const Dashboard = () => {
          <body className='body'>
          <div div className ="dash">
             <button className='button-dash'>Manage</button><br/>
-            <button className='button-dash'>New Post</button>
+            <button className='button-dash'>
+              <Link to='Dash2disp'>
+                New Post
+                </Link> 
+                </button>
           </div>
           <div className='man-disp'>
           <Manage/>

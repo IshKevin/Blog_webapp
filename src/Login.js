@@ -5,7 +5,6 @@ import Loginform from './components/Loginform'
 const Login = () => {
   return (
     <div>
-        <Header/>
         <Loginform/>
     </div>
   )

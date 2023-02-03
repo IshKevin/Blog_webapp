@@ -20,7 +20,7 @@
 
 }
 
-input{
+.input{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 20px;
@@ -32,7 +32,7 @@ input{
     width: 75%;
     height: auto;
 }
-textarea{
+.textarea{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 20px;
@@ -44,7 +44,7 @@ textarea{
     width: 75%;
     height: 200px;
 }
-button{
+.button{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 20px;
@@ -56,7 +56,7 @@ button{
     width: 75%;
     height: auto;
 }
-label{
+.label{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 20px;

@@ -1,18 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Login.css'
+
 
 const Loginform = () => {
   return (
     <div>
-        <form action='#'>
-            <label for ='username'>Username</label>
-            <input type='text' id='username' name='username' placeholder='Username'/>
-            <label for ='password'>Password</label>
-            <input type='password' id='password' name='password' placeholder='Password'/>
-            <button type='submit' value='Login'>
-                <Link to='DashBoard'>Login</Link>
-            </button>
-        </form>
+      <form className="add-form">
+        <h3>Welcome back</h3>
+        <p>Please enter your details</p>
+      <div className="form-control">
+        <label>Email</label>
+        <input type="text" placeholder='Enter Your Email'/>
+      </div>
+      <div className="form-control">
+        <label>Password</label>
+        <input type="password" 
+        placeholder='Enter Your Password'/>
+      </div>
+      <Link to="/dashboard"><button type="submit"
+      className="btn btn-block">Login</button></Link>
+      <p>Dont have an account? <Link to='/sign-up' style={{color: 'inherit', textDecoration: 'inherit'}}><span>SignUp</span></Link> </p>
+    </form>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Newpost from './Newpost'
 
 
@@ -11,7 +12,9 @@ const Dash2 = () => {
          </header>
          <body className='body'>
          <div div className ="dash">
-            <button className='button-dash'>Manage</button><br/>
+            <button className='button-dash'>
+                <Link to='Dashboard'>Manage</Link>
+            </button><br/>
             <button className='button-dash'>New Post</button>
           </div>
           <div className='man-disp'>

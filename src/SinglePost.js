@@ -4,9 +4,8 @@ import './SinglePost.css'
 
 const SinglePost = () => {
   return (
-    <div>
-      <Header />
-      <img src={process.env.PUBLIC_URL + '/Images/pexels-pixabay-34098.jpg'} alt="Photocase" />
+    <div className='single-post'>
+      <img src={process.env.PUBLIC_URL + '/Images/pexels-paul-deetman-2695679.jpg'} alt="Photocase" />
       <div className='single-post'>
       <h1 className="singlePostTitle">
           Lorem ipsum dolor
@@ -19,9 +18,8 @@ const SinglePost = () => {
           <span>
             Author:
             <b className="singlePostAuthor">
-              {/* <Link className="link" to="/posts?username=Safak"> */}
+
                 Safak
-              {/* </Link> */}
             </b>
           </span>
           <span>1 day ago</span>

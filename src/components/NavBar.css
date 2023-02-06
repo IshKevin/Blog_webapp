@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@100;200&display=swap');
+.Header-Style{
+    color: #fff;
+    font-weight: 900; 
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+}
+.log{
+    text-align: center;
+    padding-right: 30px;
+    
+
+}
+
+.logo-name{
+    font-size: 40px;
+    font-weight: 900;
+}

@@ -13,22 +13,6 @@ const Navbar = () => {
 		navRef.current.classList.toggle("responsive_nav");
 	};
   return (
-    // <header className='Header-Style'>
-    //     <div className="logo">
-    //         <span className='logo-name'>The Safari Blog</span>    
-    //     </div>
-    //     <nav ref={navRef}>
-    //     <button className='nav-btn nav-close-btn' onClick={toggleNav}>
-    //         <FaTimes />
-    //         </button>
-    //         <Link to='Signup'>Signup</Link>
-    //         <Link to='Login'>Login</Link>
-           
-    //     </nav>
-    //     <button className='nav-btn' onClick={toggleNav}>
-    //         <FiMenu/>
-    //     </button>
-    // </header>
     <header>
 			<h3><div className="logo">
              <span className='logo-name'>The Safari Blog</span>    

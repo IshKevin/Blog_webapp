@@ -7,14 +7,10 @@ import './HeaderStyle.css'
 const Header = () => {
   return (
     <div className='head'>
-        <div className='logo'>
-        <h1>The Safari Blog</h1>
-        </div>
-        <div className='nav'>
-            <Link to='Signup'>Signup</Link>
-            <Link to='Login'>Login</Link>
-            
-         </div>   
+     <p>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>   
     </div>
   )
 }

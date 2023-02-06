@@ -14,10 +14,10 @@ const Navbar = () => {
 	};
   return (
     <header>
-			<h3><div className="logo">
+			<h1><div className="logo">
              <span className='logo-name'>The Safari Blog</span>    
           </div>
-          </h3>
+          </h1>
 			<nav ref={navRef}>
                 <Link to='Signup'>Signup</Link>
                 <Link to='Login'>Login</Link>

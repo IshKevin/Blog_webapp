@@ -10,14 +10,23 @@
     height: 100px;
 
 }
-.log{
+/* .log{
     text-align: center;
     padding-right: 30px;
     
 
-}
+} */
 
 .logo-name{
     font-size: 40px;
     font-weight: 900;
+}
+
+.nav-btn{
+    padding: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
 }

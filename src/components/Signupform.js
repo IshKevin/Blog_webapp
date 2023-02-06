@@ -2,11 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './signup.css' 
 import Header from './Header'    
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 const Signup = () => {
   return (
     <div >
-      <Header className="header-display" />
+      <Navbar/>
       <form className="form-signup" action='#'>
         <label for='username'>Username</label><br/>
         <input type='text' id='username' name='username' placeholder='Username' /> <br/>
@@ -21,6 +23,7 @@ const Signup = () => {
         </button>
       
       </form>
+      <Footer/>
     </div>
   )
 }

@@ -1,5 +1,4 @@
 .add-form {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +12,10 @@
     overflow: auto;
     padding: 30px;
     width: auto;
-    height:auto
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+
     
   }
   .add-form p{

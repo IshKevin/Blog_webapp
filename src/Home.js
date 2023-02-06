@@ -7,14 +7,12 @@ import Footer from './components/Footer'
 
 const Home = () => {
   return (
-    <div>
-      <React.Fragment>
+    <React.Fragment>
     <Navbar/>
     <Header className="hheader"/>
     <Photocase/>
     <Footer/>
-    </React.Fragment>
-    </div>
+    </React.Fragment> 
   )
 }
 

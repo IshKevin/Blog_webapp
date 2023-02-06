@@ -7,24 +7,26 @@
     width: auto;
 }
 
-.welcome-text-header{
-    color: rgb(255, 255, 255);
+.text-header{
+    color: #505050;
     text-align: center;
     font-size: 30px;
     margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 2px solid white;
+    background-color: white;
 
 }
 
 @media only screen and (max-width: 1024px) {
     
-    .welcome-text-header{
-        color: white;
+    .text-header{
+        color: #505050;
         text-align: center;
         font-size: 25px;
         margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }

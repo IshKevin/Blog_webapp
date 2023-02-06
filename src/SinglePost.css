@@ -24,6 +24,7 @@
     margin: 10px;
     font-size: 28px;
     font-family: "Lora", sans-serif;
+    color: rgb(112, 111, 111);
   }
   
   .singlePostEdit {
@@ -60,6 +61,8 @@
     color: #666;
     font-size: 18px;
     line-height: 25px;
+    height: auto;
+    overflow: hidden;
   }
   
   .singlePostDesc::first-letter {

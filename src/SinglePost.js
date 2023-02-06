@@ -1,10 +1,13 @@
 import React from 'react'
 import Header from './components/Header'
 import './SinglePost.css'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const SinglePost = () => {
   return (
     <div className='single-post'>
+      <Navbar/>
       <img src={process.env.PUBLIC_URL + '/Images/pexels-paul-deetman-2695679.jpg'} alt="Photocase" />
       <div className='single-post'>
       <h1 className="singlePostTitle">
@@ -55,6 +58,7 @@ const SinglePost = () => {
           a odit modi eos! Lorem, ipsum dolor sit amet consectetur.
         </p>
       </div>
+      <Footer/>
       </div>
   )
 }

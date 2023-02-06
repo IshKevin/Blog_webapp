@@ -1,6 +1,4 @@
 .head{
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background-image: url(/public/Images/pexels-stein-egil-liland-3408744.jpg);
     background-repeat: no-repeat;
@@ -9,29 +7,24 @@
     width: auto;
 }
 
-.log{
+.welcome-text-header{
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding-right: 30px;
-    font-size: 35px;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-
-.nav{
-    display: flex;
-    flex-direction: row;
+@media only screen and (max-width: 1024px) {
     
-    padding: 30px;
-    font-size: 20px;
-    justify-content: center;
-
-}
-
-a{
-    text-decoration: none;
-    color: #ffffff;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 35px;
+    .welcome-text-header{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

@@ -4,7 +4,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div>welcome to footer</div>
+    <div className='foot-style'>welcome to footer</div>
   )
 }
 

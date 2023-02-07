@@ -1,7 +1,7 @@
 .post-pic{
     flex: 6;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 20px 20px 20px 20px;
     width:100%;
 }

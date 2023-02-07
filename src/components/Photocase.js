@@ -5,6 +5,7 @@ import './Photocase.css'
 const Photocase = () => {
   return (
     <div className='post-pic'>
+      <div className='sect-1'>
       <div className="post-box">
       <img src={process.env.PUBLIC_URL + '/Images/pexels-pixabay-34098.jpg'} alt="Photocase" />
       <div className="post-Info">
@@ -64,7 +65,8 @@ const Photocase = () => {
             </p>
           </div>
         </div>
-
+        </div>
+        <div className='sect-2'>
         <div className="post-box">
       <img src={process.env.PUBLIC_URL + '/Images/pexels-lucas-craig-3714339.jpg'} alt="Photocase" />
       <div className="post-Info">
@@ -124,6 +126,10 @@ const Photocase = () => {
             </p>
           </div>
         </div>
+        </div>
+        <button>
+          <h3>Load More</h3>
+        </button>
     </div>
   )
 }

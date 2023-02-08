@@ -21,6 +21,7 @@ header {
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+	width: 100%;
 }
 
 nav a {
@@ -49,6 +50,7 @@ header div,
 nav {
 	display: flex;
 	align-items: center;
+	right: 0;
 }
 
 @media only screen and (max-width:740px) {

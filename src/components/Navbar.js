@@ -18,8 +18,8 @@ const Navbar = () => {
           </div>
           </h1>
 			<nav ref={navRef}>
-                <Link to='Signup'>Signup</Link>
-                <Link to='Login'>Login</Link>
+                <Link to='/signup'>Signup</Link>
+                <Link to='/login'>Login</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

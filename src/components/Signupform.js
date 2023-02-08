@@ -24,7 +24,7 @@ const Signup = () => {
       </div>
       <Link to="/dashboard"><button type="submit"
       className="btn btn-block">SignUp</button></Link>
-      <p>U have an account? <Link to='/Login' style={{color: 'inherit', textDecoration: 'inherit'}}><span>SignUp</span></Link> </p>
+      <p>U have an account? <Link to='/Login' style={{color: 'inherit', textDecoration: 'inherit'}}><span>Login</span></Link> </p>
     </form>
     </div>
   )

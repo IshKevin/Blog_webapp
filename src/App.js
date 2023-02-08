@@ -19,7 +19,7 @@ function App() {
       }/>
       <Route path="Signup" element={<Signup/>}/>
       <Route path="Login" element={<Login/>}/>
-      <Route path="*" element={<DashBoard/>}/>
+      <Route path="dashBoard" element={<DashBoard/>}/>
       <Route path="SinglePost" element={<SinglePost/>}/>
       <Route path="Manage" element={<Manage/>}/>
       <Route path="Newpost" element={<Newpost/>}/>

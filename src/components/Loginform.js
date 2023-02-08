@@ -1,11 +1,13 @@
 
 import { Link } from 'react-router-dom'
 import './Login.css'
+import Navbar from './Navbar'
 
 
 const Loginform = () => {
   return (
     <div>
+      <Navbar/>
       <form className="add-form">
         <h3>Welcome back</h3>
         <p>Please enter your details</p>
@@ -20,7 +22,7 @@ const Loginform = () => {
       </div>
       <Link to="/dashboard"><button type="submit"
       className="btn btn-block">Login</button></Link>
-      <p>Dont have an account? <Link to='/sign-up' style={{color: 'inherit', textDecoration: 'inherit'}}><span>SignUp</span></Link> </p>
+      <p>Dont have an account? <Link to='/signup' style={{color: 'inherit', textDecoration: 'inherit'}}><span>SignUp</span></Link> </p>
     </form>
     </div>
   )

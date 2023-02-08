@@ -6,20 +6,26 @@ const Signup = () => {
   return (
     <div >
       <Navbar/>
-      <form className="form-signup" action='#'>
-        <label for='username'>Username</label><br/>
-        <input type='text' id='username' name='username' placeholder='Username' /> <br/>
-        <labale for="email">Email</labale><br />
-        <input type="email" id="email" name="email" placeholder="Email" /> <br />
-        <label for='password'>Password</label><br/>
-        <input type='password' id='password' name='password' placeholder='Password' /><br />
-        <label for='password'>Confirm Password</label><br/>
-        <input type='password' id='password' name='password' placeholder='Confirm Password' /><br />
-        <button type='submit' value='Signup'>
-          <Link to='DashBoard'>Signup</Link>  
-        </button>
-      
-      </form>
+      <form className="add-form">
+        <h3>Welcome to our blog</h3>
+        <p>Please enter your details</p>
+        <div className="form-control">
+        <label>User name</label>
+        <input type="text" placeholder='Enter Your user name'/>
+      </div>
+      <div className="form-control">
+        <label>Email</label>
+        <input type="text" placeholder='Enter Your Email'/>
+      </div>
+      <div className="form-control">
+        <label>Password</label>
+        <input type="password" 
+        placeholder='Enter Your Password'/>
+      </div>
+      <Link to="/dashboard"><button type="submit"
+      className="btn btn-block">SignUp</button></Link>
+      <p>U have an account? <Link to='/Login' style={{color: 'inherit', textDecoration: 'inherit'}}><span>SignUp</span></Link> </p>
+    </form>
     </div>
   )
 }

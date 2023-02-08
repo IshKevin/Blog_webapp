@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import './NavBar.css'
-import { FiMenu } from 'react-icons/fi'
 import { FaTimes } from 'react-icons/fa'
 import { FaBars } from 'react-icons/fa'
 
@@ -31,6 +30,8 @@ const Navbar = () => {
 				<FaBars />
 			</button>
 		</header>
+
+
   )
 }
 

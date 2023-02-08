@@ -10,10 +10,13 @@ import Dash2disp from './Dash2disp';
 
 function App() {
   return (
+    <>
+    
     <BrowserRouter>
-  
     <Routes>
-      <Route path="/" element={<Home/>}/>
+      <Route path="/" element={
+       <Home />
+      }/>
       <Route path="Signup" element={<Signup/>}/>
       <Route path="Login" element={<Login/>}/>
       <Route path="*" element={<DashBoard/>}/>
@@ -23,6 +26,7 @@ function App() {
       <Route path="Dash2disp" element={<Dash2disp/>}/>
     </Routes>
     </BrowserRouter>
+    </>
   );
 }
 

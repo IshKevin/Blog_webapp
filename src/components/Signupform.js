@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './signup.css' 
-import Header from './Header'    
+import './signup.css'    
 import Navbar from './Navbar'
-import Footer from './Footer'
-
 const Signup = () => {
   return (
     <div >
@@ -23,7 +20,6 @@ const Signup = () => {
         </button>
       
       </form>
-      <Footer/>
     </div>
   )
 }

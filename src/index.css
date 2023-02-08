@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@100;200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@100;200&display=swap'); 
 
 * {
   margin: 0;
@@ -6,6 +6,7 @@
   overflow-x: hidden;
   color: #384955;
   font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  font-size: 20px;
 }
 
 .hhead{

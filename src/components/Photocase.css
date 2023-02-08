@@ -2,18 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 20px 20px 20px;
+   justify-content: space-between;
     width:100%;
 }
 .sect-1{
 display: flex;
 flex-direction: row;
+justify-content: space-between;
 }
 .sect-2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px 20px 20px 20px;
 }
 .post-box{
     width: 200px;

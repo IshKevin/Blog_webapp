@@ -18,5 +18,9 @@ a{
 }
 Link{
   color: white;
+  font-size: bold;
 }
-
+button{
+  font-size: bold;
+  color: wheat;
+}

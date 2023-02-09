@@ -14,7 +14,7 @@ const Dash2 = () => {
          <aside class="sidebar__sidebar">
          <div div className ="dash">
             <button className='button-dash'>
-                <Link to='Dashboard'>Manage</Link>
+                <Link to='/Dashboard'>Manage</Link>
             </button>
             <button className='button-dash'>New Post</button>
           </div>

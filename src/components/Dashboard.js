@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import Manage from './Manage'
+import {AiFillHome} from 'react-icons/ai'
 
 
 const Dashboard = () => {
@@ -9,6 +10,11 @@ const Dashboard = () => {
   return (
     <div className='dash-disp'>
        <header className='heads'>
+        <button>
+        <Link to='/'>
+         <AiFillHome className='icon-home'/>
+         </Link>
+        </button>
          <h1>Dashboard</h1>
          </header>
          <div class="sidebar">
@@ -16,7 +22,7 @@ const Dashboard = () => {
          <div div className ="dash">
             <button className='button-dash'>Manage</button><br/>
             <button className='button-dash'>
-              <Link to='Dash2disp'>
+              <Link to='../Dash2disp'>
                 New Post
                 </Link> 
                 </button>

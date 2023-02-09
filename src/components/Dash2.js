@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Newpost from './Newpost'
+import {BiEdit} from 'react-icons/bi'
 
 
 const Dash2 = () => {
@@ -16,7 +17,8 @@ const Dash2 = () => {
             <button className='button-dash'>
                 <Link to='/Dashboard'>Manage</Link>
             </button>
-            <button className='button-dash'>New Post</button>
+            <button className='button-dash'>
+              <BiEdit/>New Post</button>
           </div>
           </aside>
           <main class="sidebar__main">

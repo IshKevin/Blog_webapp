@@ -1,10 +1,10 @@
 import React from 'react'
 import Dashboard from './components/Dashboard'
 
-const DashBoard = () => {
+const DashBoard = ({posts}) => {
   return (
     <div>
-      <Dashboard />
+      <Dashboard posts={posts}/>
     </div>
   )
 }

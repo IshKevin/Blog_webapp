@@ -1,7 +1,7 @@
 import React from 'react'
 import './Newpost.css'
 
-const Newpost = () => {
+const Newpost = ({posts}) => {
   return (
     <div className="Post-form">
         <from className="form-manager" >

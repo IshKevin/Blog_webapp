@@ -4,9 +4,10 @@ import Newpost from './Newpost'
 import {BiEdit} from 'react-icons/bi'
 
 
-const Dash2 = () => {
+const Dash2 = ({posts}) => {
   return (
     <div>
+        
         <div className='dash-disp'>
        <header className='heads'>
          <h1>Dashboard</h1>
@@ -23,7 +24,7 @@ const Dash2 = () => {
           </aside>
           <main class="sidebar__main">
           <div className='man-disp'>
-          <Newpost/>
+          <Newpost posts={posts}/>
           </div>
           </main>
           </div>

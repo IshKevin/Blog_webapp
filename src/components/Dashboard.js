@@ -5,7 +5,7 @@ import Manage from './Manage'
 import {AiFillHome} from 'react-icons/ai'
 
 
-const Dashboard = () => {
+const Dashboard = ({posts}) => {
     
   return (
     <div className='dash-disp'>
@@ -30,7 +30,7 @@ const Dashboard = () => {
           </aside>
           <main class="sidebar__main">
           <div className='man-disp'>
-          <Manage/>
+          <Manage posts={posts}/>
           </div>
           </main>
           </div>

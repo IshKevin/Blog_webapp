@@ -23,7 +23,7 @@ function App() {
       <Route path="SinglePost" element={<SinglePost/>}/>
       <Route path="Manage" element={<Manage/>}/>
       <Route path="Newpost" element={<Newpost/>}/>
-      <Route path="Dash2disp" element={<Dash2disp/>}/>
+      <Route path="dash2disp" element={<Dash2disp/>}/>
     </Routes>
     </BrowserRouter>
     </>

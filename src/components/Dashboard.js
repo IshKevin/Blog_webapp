@@ -11,7 +11,8 @@ const Dashboard = () => {
        <header className='heads'>
          <h1>Dashboard</h1>
          </header>
-         <body className='body'>
+         <div class="sidebar">
+         <aside class="sidebar__sidebar">
          <div div className ="dash">
             <button className='button-dash'>Manage</button><br/>
             <button className='button-dash'>
@@ -20,10 +21,13 @@ const Dashboard = () => {
                 </Link> 
                 </button>
           </div>
+          </aside>
+          <main class="sidebar__main">
           <div className='man-disp'>
           <Manage/>
           </div>
-          </body>
+          </main>
+          </div>
     </div>
 
   )

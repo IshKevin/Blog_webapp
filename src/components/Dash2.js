@@ -10,17 +10,21 @@ const Dash2 = () => {
        <header className='heads'>
          <h1>Dashboard</h1>
          </header>
-         <body className='body'>
+         <div class="sidebar">
+         <aside class="sidebar__sidebar">
          <div div className ="dash">
             <button className='button-dash'>
                 <Link to='Dashboard'>Manage</Link>
-            </button><br/>
+            </button>
             <button className='button-dash'>New Post</button>
           </div>
+          </aside>
+          <main class="sidebar__main">
           <div className='man-disp'>
           <Newpost/>
           </div>
-          </body>
+          </main>
+          </div>
     </div>
 
     </div>

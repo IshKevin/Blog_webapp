@@ -4,12 +4,12 @@ import Navbar from './components/Navbar'
 import Photocase from './components/Photocase'
 
 
-const Home = () => {
+const Home = ({posts}) => {
   return (
     <div>
     <Navbar/>
     <Header className="hheader"/>
-    <Photocase/>
+    <Photocase posts={posts}/>
     </div> 
   )
 }

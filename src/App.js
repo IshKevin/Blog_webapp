@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Signup from './components/Signupform';
@@ -7,15 +8,26 @@ import SinglePost from './SinglePost';
 import Manage from './components/Manage';
 import Newpost from './components/Newpost';
 import Dash2disp from './Dash2disp';
+import axios from 'axios';
+import { useEffect } from 'react';
 
 function App() {
+  const [posts, setPosts] = React.useState([]);
+
+  const getPosts = async () => {
+    const response = await axios.get('https://newblog-m4im.onrender.com/api/posts');
+    setPosts(response.data.data);
+  }
+  useEffect(() => {
+    getPosts();
+  }, []);
   return (
     <>
     
     <BrowserRouter>
     <Routes>
       <Route path="/" element={
-       <Home />
+        <Home posts={posts}/>
       }/>
       <Route path="Signup" element={<Signup/>}/>
       <Route path="Login" element={<Login/>}/>

@@ -10,6 +10,11 @@ const Dash2 = ({posts}) => {
         
         <div className='dash-disp'>
        <header className='heads'>
+       <button>
+        <Link to='/'>
+         <AiFillHome className='icon-home'/>
+         </Link>
+        </button>
          <h1>Dashboard</h1>
          </header>
          <div class="sidebar">

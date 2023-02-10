@@ -19,7 +19,6 @@ const Photocase = ({posts}) => {
        return (
         <div className="disp-for-posts">
         <div className='post-pic'>
-         <div className='sect-1'>
          <div key={index} className="post-box">
          <img src={post.photo} alt={post.categories} />
          <div className="post-Info">
@@ -35,7 +34,6 @@ const Photocase = ({posts}) => {
            <p className='copper'>{post.desc.slice(0,100)}</p>
          </div>
          </div>
-          </div>
           </div>
       </div>
         )

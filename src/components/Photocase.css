@@ -1,21 +1,20 @@
-post
+.disp-for-posts{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 20px 20px 20px 20px;
+    width: 100%;
+    
+    
+}
 .post-pic{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   justify-content: space-between;
-    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 20px 20px 20px 20px;
+    width: 100%;
 }
-.sect-1{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-}
-.sect-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .post-box{
     width: 200px;
     margin: 25px 25px 40px 25px;
@@ -35,7 +34,7 @@ img{
 
 .Post-Cat{
     font-size: 14px;
-    color: #05aceea8;
+    color: #05eeeefb;
     line-height: 20px;
     margin-top: 15px;
     margin-right: 15px;
@@ -82,7 +81,7 @@ a{
 }
 
 @media screen and (max-width: 768px) {
-    .post-pic{
+    /* .post-pic{
         flex: 6;
         display: flex;
         flex-direction: column;
@@ -91,6 +90,6 @@ a{
         height: auto;
         align-items: center;
     }
-   
+    */
 }
     

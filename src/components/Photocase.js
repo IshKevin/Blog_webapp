@@ -17,14 +17,14 @@ const Photocase = ({posts}) => {
    console.log(post)
 
        return (
+        <div className="disp-for-posts">
         <div className='post-pic'>
          <div className='sect-1'>
          <div key={index} className="post-box">
-         <img src={post.photo} alt="Photocase" />
+         <img src={post.photo} alt={post.categories} />
          <div className="post-Info">
            <div className="Post-Cats">
-             <span className="Post-Cat">FLIM</span>
-             <span className="Post-Cat">PHOTO</span>
+             <span className="Post-Cat">{post.categories}</span>
            </div>
            <span className='post-title'>
              <Link to='SinglePost'>{post.title}</Link>
@@ -32,11 +32,12 @@ const Photocase = ({posts}) => {
            <span className="postDate">Posted on 12th May, 2018</span>
          </div>
          <div className="postDesc">
-           <p className='copper'>{post.desc}</p>
+           <p className='copper'>{post.desc.slice(0,100)}</p>
          </div>
          </div>
           </div>
           </div>
+      </div>
         )
       })}
     </>

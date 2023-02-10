@@ -1,23 +1,23 @@
 import './SinglePost.css'
 import Navbar from './components/Navbar'
+import {useParams} from 'react-router-dom'
 
-const SinglePost = ({post}) => {
+
+
+const SinglePost = ({posts}) => {
+  const {blogId} = useParams();
+
+  const single = posts.find((post) => post._id === blogId);
+  const {title,desc,username, photo, categories} = single;
+
   return (
+    <>
     <div className='single-post'>
       <Navbar/>
-
-      {post.map((post, index) => {
-        return (
-          <div className='single-post'>
-            <img src={post.photo} alt={post.categories} />
-          </div>
-        );
-      })}
-
-      {/* <img src={process.env.PUBLIC_URL + '/Images/pexels-paul-deetman-2695679.jpg'} alt="Photocase" />
+      <img src={photo} alt="{title}" />
       <div className='single-post'>
       <h1 className="singlePostTitle">
-          Lorem ipsum dolor
+          {title}
           <div className="singlePostEdit">
             <i className="singlePostIcon far fa-edit"></i>
             <i className="singlePostIcon far fa-trash-alt"></i>
@@ -27,46 +27,18 @@ const SinglePost = ({post}) => {
           <span>
             Author:
             <b className="singlePostAuthor">
-
-                Safak
+              {username}
             </b>
           </span>
           <span>1 day ago</span>
         </div>
         <p className="singlePostDesc">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste error
-          quibusdam ipsa quis quidem doloribus eos, dolore ea iusto impedit!
-          Voluptatum necessitatibus eum beatae, adipisci voluptas a odit modi
-          eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
-          error quibusdam ipsa quis quidem doloribus eos, dolore ea iusto
-          impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas a
-          odit modi eos! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Iste error quibusdam ipsa quis quidem doloribus eos, dolore ea
-          iusto impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas
-          a odit modi eos! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Iste error quibusdam ipsa quis quidem doloribus eos, dolore ea
-          iusto impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas
-          a odit modi eos! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Iste error quibusdam ipsa quis quidem doloribus eos, dolore ea
-          iusto impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas
-          a odit modi eos!
-          <br />
-          <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste error
-          quibusdam ipsa quis quidem doloribus eos, dolore ea iusto impedit!
-          Voluptatum necessitatibus eum beatae, adipisci voluptas a odit modi
-          eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
-          error quibusdam ipsa quis quidem doloribus eos, dolore ea iusto
-          impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas a
-          odit modi eos! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Iste error quibusdam ipsa quis quidem doloribus eos, dolore ea
-          iusto impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas
-          a odit modi eos! Lorem, ipsum dolor sit amet consectetur.
+        {desc}
         </p>
-      </div> */}
+      </div>
       
       </div>
-  )
+      </>)
 }
 
 export default SinglePost

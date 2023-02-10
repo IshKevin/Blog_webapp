@@ -26,7 +26,7 @@ const Photocase = ({posts}) => {
              <span className="Post-Cat">{post.categories}</span>
            </div>
            <span className='post-title'>
-             <Link to='SinglePost'>{post.title}</Link>
+             <Link to={`${post._id}`}>{post.title}</Link>
            </span>
            <span className="postDate">Posted on 12th May, 2018</span>
          </div>

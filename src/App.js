@@ -32,7 +32,7 @@ function App() {
       <Route path="Signup" element={<Signup/>}/>
       <Route path="Login" element={<Login/>}/>
       <Route path="dashBoard" element={<DashBoard posts={posts}/>}/>
-      <Route path="SinglePost" element={<SinglePost posts={posts}/>}/>
+      <Route path="/:blogId" element={<SinglePost posts={posts}/>}/>
       <Route path="Manage" element={<Manage posts={posts}/>}/>
       <Route path="Newpost" element={<Newpost posts={posts}/>}/>
       <Route path="dash2disp" element={<Dash2disp posts={posts}/>}/>

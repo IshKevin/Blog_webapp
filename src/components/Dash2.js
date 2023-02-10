@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Newpost from './Newpost'
 import {BiEdit} from 'react-icons/bi'
+import {AiFillHome} from 'react-icons/ai'
 
 
 const Dash2 = ({posts}) => {

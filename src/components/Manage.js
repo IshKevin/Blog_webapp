@@ -18,8 +18,15 @@ const Manage = ({posts}) => {
             </div> 
             <div className='title-on-post'>{post.title}</div>
             <div className='icons'>
-            <div className='icon1' > <AiOutlineEdit/></div>
-            <div><MdOutlineDelete/></div>
+            <div className='icon1' >
+              <button className='icon-button'> <AiOutlineEdit/>
+              </button>
+              </div>
+            <div>
+              <button className='icon-button'>
+              <MdOutlineDelete/>
+              </button>
+              </div>
             </div>
             </div>
         )

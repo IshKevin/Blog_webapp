@@ -1,11 +1,20 @@
 import './SinglePost.css'
 import Navbar from './components/Navbar'
 
-const SinglePost = () => {
+const SinglePost = ({post}) => {
   return (
     <div className='single-post'>
       <Navbar/>
-      <img src={process.env.PUBLIC_URL + '/Images/pexels-paul-deetman-2695679.jpg'} alt="Photocase" />
+
+      {post.map((post, index) => {
+        return (
+          <div className='single-post'>
+            <img src={post.photo} alt={post.categories} />
+          </div>
+        );
+      })}
+
+      {/* <img src={process.env.PUBLIC_URL + '/Images/pexels-paul-deetman-2695679.jpg'} alt="Photocase" />
       <div className='single-post'>
       <h1 className="singlePostTitle">
           Lorem ipsum dolor
@@ -54,7 +63,7 @@ const SinglePost = () => {
           iusto impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas
           a odit modi eos! Lorem, ipsum dolor sit amet consectetur.
         </p>
-      </div>
+      </div> */}
       
       </div>
   )

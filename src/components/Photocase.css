@@ -81,7 +81,7 @@ a{
 }
 
 @media screen and (max-width: 768px) {
-    /* .post-pic{
+    .post-pic{
         flex: 6;
         display: flex;
         flex-direction: column;
@@ -90,6 +90,6 @@ a{
         height: auto;
         align-items: center;
     }
-    */
+   
 }
     

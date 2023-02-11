@@ -85,22 +85,6 @@ const Newpost = () => {
       className="btn btn-block">Create post</button>
       <p>U have an account? <Link to='/Login' style={{color: 'inherit', textDecoration: 'inherit'}}><span>Login</span></Link> </p>
     </form>
-
-
-  //   <form onSubmit={handleSubmit(onSubmit)}>
-  //   <input type="text" 
-  //     {...register("title")}
-  //     placeholder={"Enter Title"}
-  //   />
-     
-    
-     
-  //   <label htmlFor="">Image</label>
-    
-  //   <button type="submit" style={{ marginTop: "80px" }}>
-  //     
-  //   </button>
-  // </form>
   )
 }
 

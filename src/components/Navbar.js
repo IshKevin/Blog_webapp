@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import './NavBar.css'
 import { FaTimes } from 'react-icons/fa'
 import { FaBars } from 'react-icons/fa'
+import {AiOutlineHome} from 'react-icons/ai'
+import {MdOutlineManageAccounts} from 'react-icons/md'
+import {MdOutlineAccountCircle} from 'react-icons/md'
+import {BsTelephone} from 'react-icons/bs'
+import {RiTeamLine} from 'react-icons/ri'
 
 
 const Navbar = () => {
@@ -18,8 +23,12 @@ const Navbar = () => {
           </div>
           </h1>
 			<nav ref={navRef}>
-                <Link to='/signup'>Signup</Link>
-                <Link to='/login'>Login</Link>
+			    <Link to='/'><AiOutlineHome/> Home</Link>
+				<Link to='/login'><MdOutlineAccountCircle/> Login</Link>
+                <Link to='/signup'><MdOutlineManageAccounts/> Signup</Link>
+				<Link to='/'><RiTeamLine/> About us</Link>
+				<Link to='/'><BsTelephone/> Content us</Link>
+                
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Photocase.css'
-import axios from 'axios'
-import { useState } from 'react'
+
 
   
 
@@ -17,8 +15,8 @@ const Photocase = ({posts}) => {
    console.log(post)
 
        return (
-        <div className="disp-for-posts">
-        <div className='post-pic'>
+        <div className="card-layout">
+         <div class="card-layout__item">
          <div key={index} className="post-box">
          <img src={post.photo} alt={post.categories} />
          <div className="post-Info">
@@ -34,8 +32,8 @@ const Photocase = ({posts}) => {
            <p className='copper'>{post.desc.slice(0,100)}</p>
          </div>
          </div>
+          </div> 
           </div>
-      </div>
         )
       })}
     </>

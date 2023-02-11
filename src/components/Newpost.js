@@ -13,6 +13,8 @@ const Newpost = () => {
     console.log(data.desc);
     const formData = new FormData();
     formData.append("title", data.title);
+    formData.append("Author", data.username);
+    formData.append("categories", data.categories);   
     formData.append("desc", data.desc);
     formData.append("photo", data.photo[0]);
     console.log(formData.get("title"));
@@ -33,9 +35,38 @@ const Newpost = () => {
     }
   };
   return (
-    <>
-   
-    </>
+    <form onSubmit={handleSubmit(onSubmit)}>
+    <input type="text" 
+      {...register("title")}
+      placeholder={"Enter Title"}
+    />
+    <input type="text"
+      {...register("username")}
+      placeholder={"Enter Author"}
+    />
+    <input type="text"
+      {...register("categories")}
+      placeholder={"Enter Categories"}
+    />
+    <textarea
+      {...register("desc")}
+      id=""
+      cols="30"
+      rows="10"
+    >
+      
+    </textarea>
+    <label htmlFor="">Image</label>
+    <input
+      type="file"
+      name=""
+      id="file"
+      {...register("image")}
+    />
+    <button type="submit" style={{ marginTop: "80px" }}>
+      Create post
+    </button>
+  </form>
   )
 }
 

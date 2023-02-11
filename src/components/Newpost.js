@@ -17,7 +17,7 @@ const Newpost = () => {
     formData.append("Author", data.username);
     formData.append("categories", data.categories);   
     formData.append("desc", data.desc);
-    formData.append("photo", data.photo[0]);
+    formData.append("photo", data.photo);
     console.log(formData.get("title"));
 
     try {

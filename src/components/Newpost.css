@@ -1,13 +1,13 @@
 .form-signup{
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+    /* margin-left: 10;
+    margin-right: auto; */
+    /* justify-content: space-between; */
     display: grid;
     border: 1px solid #384955;
     border-radius: 10px;
-    padding: 10px;
-    width: 50%;
-    height: auto;
+    /* padding: 10px; */
+    width: 600px;
+    height: 800px;
 }
     
 .add-form {
@@ -22,12 +22,12 @@
     top: 80px;
     left: 25rem;
     padding: 30px;
-    width: auto;
-    height:auto;
-    margin-left: auto;
+    width: 600px;
+    /* height:auto; */
+    /* margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    margin-bottom: auto;
+    margin-bottom: auto; */
 
     
   }
@@ -47,13 +47,14 @@
   .form-control label {
     display: block;
     color: #121929;
+    font-size: bold;
   }
   .add-form h3{
     font-size: 35px;
   }
   
   .form-control input {
-    width: 100%;
+    width: 350px;
     height: 30px;
     margin: 5px 0;
     padding: 3px 7px;
@@ -62,7 +63,26 @@
     border-radius: 5px;
     background-color: transparent;
   }
-  
+  .form-control textarea {
+    width: 350px;
+    height: 100px;
+    margin: 5px 0;
+    padding: 3px 7px;
+    font-size: 17px;
+    border: 1px solid #121929;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  .form-control file {
+    width: 350px;
+    height: 30px;
+    /* margin: 5px 0;
+    padding: 3px 7px; */
+    font-size: 17px;
+    /* border: 1px solid #121929;
+    border-radius: 5px; */
+    background-color: transparent;
+  }
   .add-form button{
     background-color: #121929;
     color: #fff;

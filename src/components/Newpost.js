@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactQuill from 'react-quill';
 import './Newpost.css'
 import { useForm } from "react-hook-form";
 import axios from 'axios'
@@ -62,11 +61,11 @@ const Newpost = () => {
       </div>
       <div className="form-control">
         <label>Blog Description</label>
-        <textarea
+        <textarea className='form-control'
        {...register("desc")}
        id=""
-       cols="30"
-       rows="10"
+       cols="37"
+       rows="3"
      >
       
      </textarea>
@@ -83,7 +82,6 @@ const Newpost = () => {
       
       <button type="submit"
       className="btn btn-block">Create post</button>
-      <p>U have an account? <Link to='/Login' style={{color: 'inherit', textDecoration: 'inherit'}}><span>Login</span></Link> </p>
     </form>
   )
 }

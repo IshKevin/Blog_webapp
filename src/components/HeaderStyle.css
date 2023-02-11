@@ -8,22 +8,22 @@
 }
 
 .text-header{
-    color: #505050;
+    color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 60px;
     margin-left: 40px;
     margin-right: 40px;
     border: 2px solid rgb(211, 206, 206);
     border-radius: 25px;
-    background-color: white;
+    background: transparent;
 
 }
 
 @media only screen and (max-width: 740px) {
     
     .text-header{
-        color: #505050;
+        color: #ffffff;
         text-align: center;
         font-size: 25px;
         margin-top: 30px;

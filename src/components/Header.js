@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Welcome from './Welcome'
+
 
 import './HeaderStyle.css'
 
@@ -8,9 +7,9 @@ const Header = () => {
   return (
     <div className='head'>
      <div className='text-header'>
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+     Welcome to Safari Blog, your ultimate guide to exploring the wilds of Africa. 
+     Join us on our journey as we travel to the heart of the savanna, showcasing 
+     the beauty and diversity of its flora and fauna.
       </div>   
     </div>
   )

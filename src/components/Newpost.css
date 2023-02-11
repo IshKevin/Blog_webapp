@@ -1,8 +1,4 @@
-.Post-form{
-    font-size: 30px;
-    font-weight: 900px;
-    margin-bottom: auto;
-    margin-top: 10px;
+.form-signup{
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
@@ -13,56 +9,68 @@
     width: 50%;
     height: auto;
 }
-
-.form-manager{
-   justify-content: center;
-   font-size: 40px;
-
-}
-
-.input{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: space-between;
-    border: 1px solid #384955;
-    border-radius: 10px;
-    padding: 10px;
-    width: 75%;
-    height: auto;
-}
-.textarea{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: space-between;
-    border: 1px solid #384955;
-    border-radius: 10px;
-    padding: 10px;
-    width: 75%;
-    height: 200px;
-}
-.button{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    
+.add-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    border: 1px solid #384955;
-    border-radius: 10px;
-    padding: 10px;
-    width: 75%;
-    height: auto;
-}
-.label{
-    margin-bottom: 10px;
+    max-width: 450px;
+    padding: 40px 0;
+    border: 1px solid #121929;
+    border-radius: 5px;
+    top: 80px;
+    left: 25rem;
+    padding: 30px;
+    width: auto;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: left;
-    padding: 10px;
-    width: 75%;
-    height: auto;
-}
+    margin-bottom: auto;
+
+    
+  }
+  .add-form p{
+    margin: 10px;
+  }
+  .add-form span{
+    color: #121929;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    margin: 10px 5px;
+  }
+  
+  .form-control label {
+    display: block;
+    color: #121929;
+  }
+  .add-form h3{
+    font-size: 35px;
+  }
+  
+  .form-control input {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    padding: 3px 7px;
+    font-size: 17px;
+    border: 1px solid #121929;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  
+  .add-form button{
+    background-color: #121929;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    width: 220px;
+  }

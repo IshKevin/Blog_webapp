@@ -3,6 +3,7 @@ import ReactQuill from 'react-quill';
 import './Newpost.css'
 import { useForm } from "react-hook-form";
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 
@@ -35,38 +36,71 @@ const Newpost = () => {
     }
   };
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-    <input type="text" 
-      {...register("title")}
-      placeholder={"Enter Title"}
-    />
-    <input type="text"
-      {...register("username")}
-      placeholder={"Enter Author"}
-    />
-    <input type="text"
-      {...register("categories")}
-      placeholder={"Enter Categories"}
-    />
-    <textarea
-      {...register("desc")}
-      id=""
-      cols="30"
-      rows="10"
-    >
+    <form className="add-form" onSubmit={handleSubmit(onSubmit)}>
+        <h3>Welcome to our blog</h3>
+        <p>Please enter details of story</p>
+        <div className="form-control">
+        <label>Blog Title</label>
+        <input type="text" 
+         {...register("title")}
+         placeholder={"Enter Title"}
+       />
+      </div>
+      <div className="form-control">
+        <label>Author Name</label>
+        <input type="text"
+       {...register("username")}
+       placeholder={"Enter Author"}
+     />
+      </div>
+      <div className="form-control">
+        <label>Categories</label>
+        <input type="text"
+       {...register("categories")}
+       placeholder={"Enter Categories"}
+     />
+      </div>
+      <div className="form-control">
+        <label>Blog Description</label>
+        <textarea
+       {...register("desc")}
+       id=""
+       cols="30"
+       rows="10"
+     >
       
-    </textarea>
-    <label htmlFor="">Image</label>
-    <input
-      type="file"
-      name=""
-      id="file"
-      {...register("image")}
-    />
-    <button type="submit" style={{ marginTop: "80px" }}>
-      Create post
-    </button>
-  </form>
+     </textarea>
+      </div>
+      <div className="form-control">
+        <label>Image</label>
+        <input
+       type="file"
+       name=""
+       id="file"
+       {...register("image")}
+     />
+      </div>
+      
+      <button type="submit"
+      className="btn btn-block">Create post</button>
+      <p>U have an account? <Link to='/Login' style={{color: 'inherit', textDecoration: 'inherit'}}><span>Login</span></Link> </p>
+    </form>
+
+
+  //   <form onSubmit={handleSubmit(onSubmit)}>
+  //   <input type="text" 
+  //     {...register("title")}
+  //     placeholder={"Enter Title"}
+  //   />
+     
+    
+     
+  //   <label htmlFor="">Image</label>
+    
+  //   <button type="submit" style={{ marginTop: "80px" }}>
+  //     
+  //   </button>
+  // </form>
   )
 }
 

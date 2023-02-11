@@ -18,8 +18,8 @@ const Dash2 = ({posts}) => {
         </button>
          <h1>Dashboard</h1>
          </header>
-         <div class="sidebar">
-         <aside class="sidebar__sidebar">
+         <div className="sidebar">
+         <aside className="sidebar__sidebar">
          <div div className ="dash">
             <button className='button-dash'>
                 <Link to='/Dashboard'>Manage</Link>
@@ -28,7 +28,7 @@ const Dash2 = ({posts}) => {
               <BiEdit/>New Post</button>
           </div>
           </aside>
-          <main class="sidebar__main">
+          <main className="sidebar__main">
           <div className='man-disp'>
           <Newpost posts={posts}/>
           </div>

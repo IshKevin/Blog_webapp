@@ -111,7 +111,6 @@ const Signup = () => {
       </div>
      ) : (
     <div >
-      <Navbar/>
        <form className="add-form">
         <h3>Welcome to our blog</h3>
         <p>Please enter your details</p>

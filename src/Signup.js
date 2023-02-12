@@ -6,11 +6,10 @@ import Footer from './components/Footer'
 
 const Signup = () => {
   return (
-    <div>
-     {/* <Navbar/> */}
-      <Signupform />
-      {/* <Footer/> */}
-    </div>
+    <>
+     <Navbar/>
+    {/* <Signupform /> */}
+    </>
   )
 }
 

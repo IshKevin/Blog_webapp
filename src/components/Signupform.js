@@ -37,9 +37,9 @@ const Signup = () => {
   const [errMsg, setErrMsg] = useState('');
   const [success, setSuccess] = useState(false);
 
-  useEffect(() =>{
-    userRef.current.focus();
-  }, [])
+  // useEffect(() =>{
+  //   userRef.current.focus();
+  // }, [])
 
   useEffect(() =>{
     const result = USER_REGEX.test(name);
@@ -98,11 +98,8 @@ const Signup = () => {
       } else {
         setErrMsg('Registration Failed');
       }
-
-    }
-
-
-  return (
+     }
+     return (
     <>
      {success ?(
       <div className="success-msg">
@@ -111,24 +108,50 @@ const Signup = () => {
       </div>
      ) : (
     <div >
-       <form className="add-form">
+       <form className="add-form" onSubmit={handleSubmit}>
         <h3>Welcome to our blog</h3>
         <p>Please enter your details</p>
         <div className="form-control">
         <label>User name</label>
-        <input type="text" placeholder='Enter Your user name'/>
+        <input 
+              className={validName? "input-valid" : "input-notvalid" }
+               type="text" 
+               id="username"
+               placeholder="username"
+               ref={userRef}
+               autoComplete="off"
+               onChange={(e) => setName(e.target.value)}
+               aria-invalid={validName? "false": "true"}
+               aria-describedby="uidnote"
+               onFocus={ () => setNameFocus(true)}
+               onBlur={() => setNameFocus(false)}
+               />
         </div>
         <div className="form-control">
         <label>Email</label>
-        <input type="text" placeholder='Enter Your Email'/>
+        <input type="text" 
+        id="email"
+        placeholder="email"
+        onChange={(e) => setEmail(e.target.value)}
+        aria-invalid={validEmail ? "false": "true"}
+        aria-describedby="emailnote"
+        onFocus={() => setEmailFocus(true)}
+        onBlur={() => setEmailFocus(false)}/>
       </div>
       <div className="form-control">
         <label>Password</label>
-        <input type="password" 
-        placeholder='Enter Your Password'/>
+        <input 
+        type="password" 
+        id="password"
+        placeholder="password"
+        onChange={(e) => setPassword(e.target.value)}
+        onFocus={() => setPasswordFocus(true)}
+        onBlur={() => setPasswordFocus(false)}/>
       </div>
       <Link to="/dashboard"><button type="submit"
-      className="btn btn-block">SignUp</button></Link>
+      className="btn-register"
+      disabled={!validName || !validPassword || !validMatchPwd? true: false}
+      >Sign up</button></Link>
       <p>U have an account? <Link to='/Login' style={{color: 'inherit', textDecoration: 'inherit'}}><span>Login</span></Link> </p>
     </form>
     </div>

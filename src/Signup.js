@@ -7,8 +7,9 @@ import Footer from './components/Footer'
 const Signup = () => {
   return (
     <>
-     <Navbar/>
-    {/* <Signupform /> */}
+     <Navbar/> 
+    <Signupform />
+    <p>welcome to sing up</p>
     </>
   )
 }

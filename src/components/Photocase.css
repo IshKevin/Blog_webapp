@@ -162,3 +162,20 @@ a{
     margin-right: 15px;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 768px) {
+    .post-box{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .story-imag{
+        width: 95%;
+        height:150px;
+        object-fit: cover;  
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-top:30px;
+        
+    } 
+}

@@ -44,7 +44,7 @@ const  {register,handleSubmit,formState:{errors},reset} = useForm({});
 
   const  onSubmit = async (data) => {
     try {
-  const response = await  axios.post("https://newblog-m4im.onrender.com/api/auth/register/", data);
+  const response = await  axios.post("https://newblog-m4im.onrender.com/api/auth/signup", data);
     console.log(response);
     } catch (error) {
       console.log(error.response);

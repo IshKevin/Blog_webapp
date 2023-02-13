@@ -9,8 +9,8 @@ const LOGIN_URL = "https://newblog-m4im.onrender.com/api/auth/login";
 
 const Loginform = () => {
   const { setAuth } = useContext(AuthContext);
-    const userRef = useRef();
-    const errRef = useRef();
+    
+    
 
     const [username, setUser] = useState('');
     const [email, setEmail] = useState('');
@@ -32,13 +32,8 @@ const Loginform = () => {
 
         try {
             const response = await axios.post(LOGIN_URL,
-                JSON.stringify({ username, password }),
-                {
-                    headers: { 'Content-Type': 'application/json' },
-                   
-                }
+            { username, password },
             );
-            console.log(JSON.stringify(response?.data));
             //console.log(JSON.stringify(response));
             const accessToken = response?.data?.jwt;
             localStorage.setItem("token", accessToken);
@@ -78,13 +73,14 @@ const Loginform = () => {
         <h3>Welcome back</h3>
         <p>Please enter your details</p>
       <div className="form-control">
-        <label>Email</label>
-        <input type="text" placeholder='Enter Your Email'  onChange={(event) => setEmail(event.target.value)}/>
+        <label>User name</label>
+        <input type="text" placeholder='Enter Your user name' value={username}  onChange={(event) => setUser(event.target.value)}/>
       </div>
       <div className="form-control">
         <label>Password</label>
         <input   type="password"
                  id="password"
+                 value={password}
                 onChange={(e) => setPwd(e.target.value)}
                 required
         />

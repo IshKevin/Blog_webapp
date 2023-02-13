@@ -2,41 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './signup.css'    
 import Navbar from './Navbar'
-import { useRef, useState, useEffect } from "react";
 import axios from "axios";
-
-
-const USER_REGEX = /^[A-Za-z][A-Za-z0-9_]{7,29}$/;
-const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
-const EMAIL_REGEX = /^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]/;
+import {useForm}  from  "react-hook-form";
 
 const REGISTER_URL = "https://newblog-m4im.onrender.com/api/auth/register";
 
 
 const Signup = () => {
-
-  const userRef = useRef();
-  const errRef = useRef();
-
-  const [name, setName] = useState('');
-  const [validName, setValidName] = useState(false);
-  const [nameFocus, setNameFocus] = useState(false);
-
-  const [password, setPassword] = useState("");
-  const [validPassword, setValidPassword] = useState(false);
-  const [PasswordFocus, setPasswordFocus] = useState(false);
-
-  const [matchpwd, setMatchPwd] = useState("");
-  const [validMatchPwd, setValidMatchPwd] = useState(false);
-  const [matchPwdFocus, setMatchPwdFocus] = useState(false);
-
-  const [email, setEmail] = useState("");
-  const [validEmail, setValidEmail] = useState(false);
-  const [emailFocus, setEmailFocus] = useState(false);
-
-  const [errMsg, setErrMsg] = useState('');
-  const [success, setSuccess] = useState(false);
-
+const  {register,handleSubmit,formState:{errors},reset} = useForm({});
+  
   // useEffect(() =>{
   //   userRef.current.focus();
   // }, [])
@@ -68,37 +42,14 @@ const Signup = () => {
   //   setErrMsg('');
   // }, [name, password])
 
-  const handleSubmit = async (e) =>{
-    e.preventDefault();
-    const v1 = USER_REGEX.test(name);
-    const v2 = PWD_REGEX.test(password);
-    const v3 = EMAIL_REGEX.test(email);
-    if(!v1 || !v2 || !v3){
-      setErrMsg("Invalid Entry");
-      return;
+  const  onSubmit = async (data) => {
+    try {
+  const response = await  axios.post("https://newblog-m4im.onrender.com/api/auth/register/", data);
+    console.log(response);
+    } catch (error) {
+      console.log(error.response);
     }
-    
-    try{
-      const response = await axios.post(REGISTER_URL,
-        JSON.stringify({name, password, email}),
-        {
-          headers:{"Content-Type": "application/json"}
-        }
-        );
-        console.log(response.data);
-        console.log(response.accessToken);
-        console.log(JSON.stringify(response));
-        setSuccess(true);
-        
-    } catch(err){
-      if(!err?.response){
-        setErrMsg('No Server Response');
-      } else if(err.response?.status === 409){
-        setErrMsg('Username Taken');
-      } else {
-        setErrMsg('Registration Failed');
-      }
-     }}
+  }
      return (
     <>
      {/* {success ?(
@@ -109,50 +60,41 @@ const Signup = () => {
      ) : ( */}
     <div >
       <Navbar />
-       <form className="add-form" onSubmit={(e)=>handleSubmit(e)}>
+       <form className="add-form" onSubmit={handleSubmit(onSubmit)}>
         <h3>Welcome to our blog</h3>
         <p>Please enter your details</p>
         <div className="form-control">
         <label>User name</label>
         <input 
-              className={validName? "input-valid" : "input-notvalid" }
                type="text" 
                id="username"
+               name='username'
+               {...register("username")}
                placeholder="username"
-               ref={userRef}
-               autoComplete="off"
-               onChange={(e) => setName(e.target.value)}
-               aria-invalid={validName? "false": "true"}
-               aria-describedby="uidnote"
-               onFocus={ () => setNameFocus(true)}
-               onBlur={() => setNameFocus(false)}
                />
         </div>
         <div className="form-control">
         <label>Email</label>
         <input type="text" 
         id="email"
+        name='email'
+        {...register("email")}
         placeholder="email"
-        onChange={(e) => setEmail(e.target.value)}
-        aria-invalid={validEmail ? "false": "true"}
-        aria-describedby="emailnote"
-        onFocus={() => setEmailFocus(true)}
-        onBlur={() => setEmailFocus(false)}/>
+        />
       </div>
       <div className="form-control">
         <label>Password</label>
         <input 
         type="password" 
+        name='password'
+        {...register("password")}
         id="password"
         placeholder="password"
-        onChange={(e) => setPassword(e.target.value)}
-        onFocus={() => setPasswordFocus(true)}
-        onBlur={() => setPasswordFocus(false)}/>
+        />
       </div>
-      <Link to="/dashboard"><button type="submit"
+      <button type="submit"
       className="btn-register"
-      disabled={!validName || !validPassword || !validMatchPwd? true: false}
-      >Sign up</button></Link>
+      >Sign up</button>
       <p>U have an account? <Link to='/Login' style={{color: 'inherit', textDecoration: 'inherit'}}><span>Login</span></Link> </p>
     </form>
     </div>

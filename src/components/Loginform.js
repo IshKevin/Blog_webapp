@@ -86,9 +86,8 @@ const Loginform = () => {
         <input   type="password"
                  id="password"
                 onChange={(e) => setPwd(e.target.value)}
-                
                 required
-                          />
+        />
       </div>
       <Link to="/dashboard"><button type="submit"
       className="btn btn-block" onClick={handleSubmit}>Login</button></Link>

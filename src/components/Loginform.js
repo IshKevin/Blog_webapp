@@ -12,9 +12,9 @@ const Loginform = () => {
     const userRef = useRef();
     const errRef = useRef();
 
-    const [user, setUser] = useState('');
+    const [username, setUser] = useState('');
     const [email, setEmail] = useState('');
-    const [pwd, setPwd] = useState('');
+    const [password, setPwd] = useState('');
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
 
@@ -24,24 +24,26 @@ const Loginform = () => {
 
     useEffect(() => {
         setErrMsg('');
-    }, [user, pwd])
+    }, [username, password])
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log(username, password);
 
         try {
             const response = await axios.post(LOGIN_URL,
-                JSON.stringify({ user, pwd }),
+                JSON.stringify({ username, password }),
                 {
                     headers: { 'Content-Type': 'application/json' },
-                    withCredentials: true
+                   
                 }
             );
             console.log(JSON.stringify(response?.data));
             //console.log(JSON.stringify(response));
-            const accessToken = response?.data?.accessToken;
-            const roles = response?.data?.roles;
-            setAuth({ email,pwd,accessToken });
+            const accessToken = response?.data?.jwt;
+            localStorage.setItem("token", accessToken);
+            
+            setAuth({ email,password,accessToken });
             setUser('');
             setPwd('');
             setSuccess(true);
@@ -55,7 +57,7 @@ const Loginform = () => {
             } else {
                 setErrMsg('Login Failed');
             }
-            errRef.current.focus();
+           
         }
     }
 
@@ -67,7 +69,7 @@ const Loginform = () => {
             <h1>You are logged in!</h1>
             <br />
             <p>
-                <a href="#">Go to Home</a>
+                <Link to={'/dashboard'}>Go to Home</Link>
             </p>
         </section>
         ) : (  
@@ -77,14 +79,14 @@ const Loginform = () => {
         <p>Please enter your details</p>
       <div className="form-control">
         <label>Email</label>
-        <input type="text" placeholder='Enter Your Email' value={email} onChange={(event) => setEmail(event.target.value)}/>
+        <input type="text" placeholder='Enter Your Email'  onChange={(event) => setEmail(event.target.value)}/>
       </div>
       <div className="form-control">
         <label>Password</label>
         <input   type="password"
                  id="password"
                 onChange={(e) => setPwd(e.target.value)}
-                value={pwd}
+                
                 required
                           />
       </div>

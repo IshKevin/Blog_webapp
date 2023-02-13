@@ -2,8 +2,19 @@ import React from 'react'
 import './Manage.css'
 import {AiOutlineEdit} from 'react-icons/ai'
 import {MdOutlineDelete} from 'react-icons/md'
+import axios from 'axios'
 const Manage = ({posts}) => {
-  
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`https://newblog-m4im.onrender.com/api/posts/${id}`, {
+        headers: {Authorization: `Bearer ${localStorage.getItem("token")}`}
+      });
+    
+    } catch(error){
+      console.log(error.response);
+    }
+  }
+
   return (
     <div className='manage-blog'>
         <div className='title-head'>

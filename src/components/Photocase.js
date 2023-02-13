@@ -15,10 +15,14 @@ const Photocase = ({posts}) => {
    console.log(post)
 
        return (
-        <div className="card-layout">
+        <div className="card-layout" >
          <div class="card-layout__item">
+
          <div key={index} className="post-box">
-         <img src={post.photo} alt={post.categories} />
+          <div>
+         <img className="story-imag" src={post.photo} alt={post.categories} />
+            </div>
+            <div>
          <div className="post-Info">
            <div className="Post-Cats">
              <span className="Post-Cat">{post.categories}</span>
@@ -29,9 +33,11 @@ const Photocase = ({posts}) => {
            <span className="postDate">Posted on 12th May, 2018</span>
          </div>
          <div className="postDesc">
-           <p className='copper'>{post.desc.slice(0,100)}</p>
+           <p className='copper'>{post.desc.slice(0,300)}</p>
          </div>
+            </div>
          </div>
+
           </div> 
           </div>
         )

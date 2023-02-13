@@ -1,4 +1,4 @@
-.card-layout {
+/* .card-layout {
     display: flex;
 
     
@@ -48,10 +48,7 @@ img{
     cursor: pointer;
     color: #626e74;
 }
-a{
-    text-decoration: none;
-    color: #626e74;
-}
+
 
 .postDate{
     font-size: 13px;
@@ -93,4 +90,62 @@ a{
    
 }
 
-    
+     */
+
+.card-layout__item{
+
+    /* background-color: aqua; */
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    width: auto;
+}
+
+.post-box{
+    display: flex;
+    flex-direction: row;
+    row-wrap: wrap;
+    gap: 1rem;
+    margin: 25px 25px 40px 25px;
+}
+.story-imag{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;  
+    border-radius: 10px;
+}
+.copper{
+    height: auto;
+    overflow: hidden;
+}
+.post-date{
+    font-size: 13px;
+    color: #626e74;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.post-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #626e74;
+}
+.post-desc{
+    font-size: 14px;
+    color: #626e74;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 400px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}

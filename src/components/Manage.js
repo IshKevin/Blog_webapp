@@ -3,6 +3,7 @@ import './Manage.css'
 import {AiOutlineEdit} from 'react-icons/ai'
 import {MdOutlineDelete} from 'react-icons/md'
 const Manage = ({posts}) => {
+  
   return (
     <div className='manage-blog'>
         <div className='title-head'>

@@ -41,32 +41,32 @@ const Signup = () => {
   //   userRef.current.focus();
   // }, [])
 
-  useEffect(() =>{
-    const result = USER_REGEX.test(name);
-    console.log(result);
-    console.log(name);
-    setValidName(result);
-  }, [name])
+  // useEffect(() =>{
+  //   const result = USER_REGEX.test(name);
+  //   console.log(result);
+  //   console.log(name);
+  //   setValidName(result);
+  // }, [name])
 
-  useEffect(() => {
-    const result = PWD_REGEX.test(password);
-    console.log(result);
-    console.log(password);
-    setValidPassword(result);
-    const match = password === matchpwd;
-    setValidMatchPwd(match);
-  }, [password, matchpwd])
+  // useEffect(() => {
+  //   const result = PWD_REGEX.test(password);
+  //   console.log(result);
+  //   console.log(password);
+  //   setValidPassword(result);
+  //   const match = password === matchpwd;
+  //   setValidMatchPwd(match);
+  // }, [password, matchpwd])
 
-  useEffect(() => {
-    const result = EMAIL_REGEX.test(email);
-    console.log(result);
-    console.log(email);
-    setValidEmail(result);
-  }, [email])
+  // useEffect(() => {
+  //   const result = EMAIL_REGEX.test(email);
+  //   console.log(result);
+  //   console.log(email);
+  //   setValidEmail(result);
+  // }, [email])
 
-  useEffect(() =>{
-    setErrMsg('');
-  }, [name, password])
+  // useEffect(() =>{
+  //   setErrMsg('');
+  // }, [name, password])
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
@@ -98,17 +98,18 @@ const Signup = () => {
       } else {
         setErrMsg('Registration Failed');
       }
-     }
+     }}
      return (
     <>
-     {success ?(
+     {/* {success ?(
       <div className="success-msg">
         <h1>success</h1>
         <p><Link to="/login">Login</Link></p>
       </div>
-     ) : (
+     ) : ( */}
     <div >
-       <form className="add-form" onSubmit={handleSubmit}>
+      <Navbar />
+       <form className="add-form" onSubmit={(e)=>handleSubmit(e)}>
         <h3>Welcome to our blog</h3>
         <p>Please enter your details</p>
         <div className="form-control">
@@ -155,10 +156,10 @@ const Signup = () => {
       <p>U have an account? <Link to='/Login' style={{color: 'inherit', textDecoration: 'inherit'}}><span>Login</span></Link> </p>
     </form>
     </div>
-    )}
+    {/* )} */}
   </>
     )
-}
+
 }
 
 export default Signup

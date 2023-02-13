@@ -19,7 +19,7 @@ const Loginform = () => {
     const [success, setSuccess] = useState(false);
 
     useEffect(() => {
-        userRef.current.focus();
+        // userRef.current.focus();
     }, [])
 
     useEffect(() => {

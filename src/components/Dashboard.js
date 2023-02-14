@@ -2,8 +2,7 @@
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import Manage from './Manage'
-import {AiFillHome} from 'react-icons/ai'
-import {MdDashboard} from 'react-icons/md'
+import FiSettings from 'react-icons/fi'
 
 
 const Dashboard = ({posts}) => {
@@ -14,12 +13,14 @@ const Dashboard = ({posts}) => {
         <div>
        <h1>Dashboard</h1>
         </div>
-        <div>
+        <div className='dash-header'>
         <button>
         <Link to='/'>
-         <AiFillHome className='icon-home'/>
+         <FiSettings className='icon-home'/>
          </Link>
         </button>
+        <h1>dtt</h1>
+        <h1>d</h1>
         </div>
          
          </header>

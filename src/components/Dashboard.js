@@ -12,11 +12,13 @@ const Dashboard = ({posts}) => {
        <header className='heads'>
         <div>
        <h1>Dashboard</h1>
+       <input type="text" className="search-text" placeholder="Search" />
         </div>
         <div className='dash-header'>
         <button>
         <Link to='/'>
-         <FiSettings className='icon-home'/>
+         {/* <FiSettings className='icon-home'/> */}
+         setting
          </Link>
         </button>
         <h1>dtt</h1>

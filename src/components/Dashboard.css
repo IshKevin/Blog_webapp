@@ -8,6 +8,7 @@
     /* flex-direction: column; */
 }
 
+
 .sidebar__sidebar {
     width: 20%;
     height: 200%;
@@ -53,6 +54,12 @@ h1{
      
     
 
+}
+.search-text{
+    background-image: url('/public/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
 }
 
 .log-color{

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import Manage from './Manage'
 import {AiFillHome} from 'react-icons/ai'
+import {MdDashboard} from 'react-icons/md'
 
 
 const Dashboard = ({posts}) => {
@@ -20,12 +21,22 @@ const Dashboard = ({posts}) => {
          <div className="sidebar">
          <aside className="sidebar__sidebar">
          <div div className ="dash">
-            <button className='button-dash'>Manage</button><br/>
+         <button className='button-dash'>
+              <Link className="button-dash" to='../Dash2disp'>
+              <h1 className='button-title'>Home
+                </Link> 
+                </button><br/>          
+            <button className='button-dash'>Manage</button>
             <button className='button-dash'>
-              <Link to='../Dash2disp'>
+              <Link className="button-dash" to='../Dash2disp'>
                 New Post
                 </Link> 
                 </button>
+                <button className='button-dash'>
+              <Link className="button-dash" to='/'>
+                Logout
+                </Link> 
+                </button>    
           </div>
           </aside>
           <main className="sidebar__main">

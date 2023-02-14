@@ -54,16 +54,26 @@ h1{
 
 }
 
-
+.log-color{
+    color: azure;
+    
+}
+.button-title{
+    font-size: 30px;
+}
 .button-dash{
     border: 0;
+    cursor: pointer;
     background-color: #384955;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    margin-left: 30px;
-    margin-top: 50px;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-right: auto;
     cursor: pointer;
+    outline: none;
+    text-decoration-line: none;
 }
 
 main{

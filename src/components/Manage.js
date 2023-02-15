@@ -18,7 +18,7 @@ const Manage = ({posts}) => {
   return (
     <div className='manage-blog'>
         <div className='title-head'>
-          <div>Avatar</div>
+          <div>Blog image</div>
           <div>Title</div>
           <div className='act-title'>Action</div>
         </div>

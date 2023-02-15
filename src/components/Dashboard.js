@@ -10,7 +10,7 @@ const Dashboard = ({posts}) => {
   return (
     <div className='dash-disp'>
        <header className='heads'>
-        <div>
+        <div classsName='left-dash'>
        <h1>Dashboard</h1>
        <input type="text" className="search-text" placeholder="Search" />
         </div>

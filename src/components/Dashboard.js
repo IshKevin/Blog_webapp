@@ -2,7 +2,6 @@
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import Manage from './Manage'
-import {FiSettings} from 'react-icons/fi'
 import {IoIosNotificationsOutline} from 'react-icons/io'
 import {AiFillSetting} from 'react-icons/ai'
 

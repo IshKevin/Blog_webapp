@@ -23,7 +23,7 @@ const Dashboard = ({posts}) => {
         </button>
         <h1>dtt</h1>
         <div class="avatar">
-          <img className="avatar__image" src={'Images/istockphoto.jpg'} />
+          <img className="avatar__image" src={'avatar.png'} />
         </div>
         </div>
          

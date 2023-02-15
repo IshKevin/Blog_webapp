@@ -15,15 +15,14 @@ const Dashboard = ({posts}) => {
        <h1>Dashboard</h1>
        <input type="text" className="search-text" placeholder="Search" />
         </div>
-        <div className='dash-header'>
-         <AiFillSetting className='icon-home'/>
-         </div> 
         <div>
+         <AiFillSetting className='icon-home'/>
           <IoIosNotificationsOutline className='icon-home'/>
-        </div>
+        
         <div>
         <div class="avatar">
           <img className="avatar__image" src={'avatar.png'} />
+        </div>
         </div>
         </div>
          

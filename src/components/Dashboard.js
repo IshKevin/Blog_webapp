@@ -22,7 +22,9 @@ const Dashboard = ({posts}) => {
          </Link>
         </button>
         <h1>dtt</h1>
-        <h1>d</h1>
+        <div class="avatar">
+          <img className="avatar__image" src={'Images/istockphoto.jpg'} />
+        </div>
         </div>
          
          </header>

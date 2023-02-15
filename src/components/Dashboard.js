@@ -2,8 +2,9 @@
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import Manage from './Manage'
-import FiSettings from 'react-icons/fi'
-
+import {FiSettings} from 'react-icons/fi'
+import {IoIosNotificationsOutline} from 'react-icons/io'
+import {AiFillSetting} from 'react-icons/ai'
 
 const Dashboard = ({posts}) => {
     
@@ -15,13 +16,12 @@ const Dashboard = ({posts}) => {
        <input type="text" className="search-text" placeholder="Search" />
         </div>
         <div className='dash-header'>
-        <button>
-        <Link to='/'>
-         {/* <FiSettings className='icon-home'/> */}
-         setting
-         </Link>
-        </button>
-        <h1>dtt</h1>
+         <AiFillSetting className='icon-home'/>
+         </div> 
+        <div>
+          <IoIosNotificationsOutline className='icon-home'/>
+        </div>
+        <div>
         <div class="avatar">
           <img className="avatar__image" src={'avatar.png'} />
         </div>

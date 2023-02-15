@@ -1,12 +1,21 @@
 .icon-home {
-    color: white;
+    color: white !important;
     font-size: 30px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
-AiFillSetting{
-    color: aliceblue;
+.man-disp{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
 }
-  
+
+.dash-disp{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}  
 
 .sidebar {
     display: flex;
@@ -52,8 +61,16 @@ h1{
     height:100vh ;
 }
 
+.new-dash-disp{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
 .left-dash{
-    display: inline;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
     justify-content: space-between;
     padding: 30px;
 }

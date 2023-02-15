@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Newpost from './Newpost'
-import {BiEdit} from 'react-icons/bi'
-import {AiFillHome} from 'react-icons/ai'
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
+import {IoIosNotificationsOutline} from 'react-icons/io'
+import {AiFillSetting} from 'react-icons/ai'
 
 
 
@@ -39,12 +39,20 @@ const Dash2 = ({posts}) => {
         
         <div className='dash-disp'>
        <header className='heads'>
-       <button>
-        <Link to='/'>
-         <AiFillHome className='icon-home'/>
-         </Link>
-        </button>
-         <h1>Dashboard</h1>
+       <div classsName='left-dash' className='new-dash-disp'>
+       <h1>Dashboard</h1>
+       <input type="text" className="search-text" placeholder="Search" />
+        </div>
+        <div className='right-dash'>
+         <AiFillSetting color="white" className='icon-home' />
+          <IoIosNotificationsOutline className='icon-home'/>
+        
+        <div>
+        <div class="avatar">
+          <img className="avatar__image" src={'avatar.png'} />
+        </div>
+        </div>
+        </div>
          </header>
          <div className="sidebar">
          <aside className="sidebar__sidebar">

@@ -11,12 +11,12 @@ const Dashboard = ({posts}) => {
   return (
     <div className='dash-disp'>
        <header className='heads'>
-        <div classsName='left-dash'>
+        <div classsName='left-dash' className='new-dash-disp'>
        <h1>Dashboard</h1>
        <input type="text" className="search-text" placeholder="Search" />
         </div>
-        <div>
-         <AiFillSetting className='icon-home'/>
+        <div className='right-dash'>
+         <AiFillSetting color="white" className='icon-home' />
           <IoIosNotificationsOutline className='icon-home'/>
         
         <div>

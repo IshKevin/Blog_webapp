@@ -8,6 +8,7 @@ import SinglePost from './SinglePost';
 import Manage from './components/Manage';
 import Newpost from './components/Newpost';
 import Dash2disp from './Dash2disp';
+import Dashhome from './Dashhome';
 import axios from 'axios';
 import { useEffect } from 'react';
 
@@ -36,6 +37,8 @@ function App() {
       <Route path="Manage" element={<Manage posts={posts}/>}/>
       <Route path="Newpost" element={<Newpost posts={posts}/>}/>
       <Route path="dash2disp" element={<Dash2disp posts={posts}/>}/>
+      <Route path="Dashhome" element={<Dashhome/>}/>
+      <Route path="*" element={<h1>404 Not Found</h1>}/>
     </Routes>
     </BrowserRouter>
     </>

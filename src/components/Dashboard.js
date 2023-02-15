@@ -31,7 +31,7 @@ const Dashboard = ({posts}) => {
          <aside className="sidebar__sidebar">
          <div div className ="dash">
          <button className='button-dash'>
-              <Link className="button-dash" to='../Dash2disp'>
+              <Link className="button-dash" to='../Dashhome'>
               <h1 className='button-title'>Home</h1>
                 </Link> 
                 </button><br/>          

@@ -2,6 +2,7 @@ import './Dashboard.css'
 import {IoIosNotificationsOutline} from 'react-icons/io'
 import {AiFillSetting} from 'react-icons/ai'
 import {Link} from 'react-router-dom'
+import Chart from './Chart'
 
 
 const Dashhome = () => {
@@ -18,7 +19,7 @@ const Dashhome = () => {
         
         <div>
         <div class="avatar">
-          <img className="avatar__image" src={'avatar.png'} />
+          <img className="avatar__image" src={'avatar.png'} alt='useravatar'/>
         </div>
         </div>
         </div>
@@ -50,7 +51,7 @@ const Dashhome = () => {
           </aside>
           <main className="sidebar__main">
           <div className='man-disp'>
-          {/* <Manage posts={posts}/> */}
+          <Chart/>
           </div>
           </main>
           </div>

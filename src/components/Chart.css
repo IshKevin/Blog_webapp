@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     padding: 0.5rem;
-    
+
 } 
 
 .dash-home-title{
@@ -14,6 +14,8 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .card-layout {
@@ -21,10 +23,21 @@
     flex-wrap: wrap;
     margin-left: -0.25rem;
     margin-right: -0.25rem;
+    justify-content: space-between;
 }
 
 .card-layout__item {
     flex-basis: 33.33333%;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
+}
+
+.card-inside{
+    display: flex;
+    width: 100%;
+    
+}
+
+.card-exp{
+    font-size: 15px;
 }

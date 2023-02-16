@@ -1,0 +1,30 @@
+ .Chart{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    
+} 
+
+.dash-home-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+}
+
+.card-layout__item {
+    flex-basis: 33.33333%;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}

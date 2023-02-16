@@ -1,10 +1,15 @@
 .head{
     justify-content: space-between;
-    background-image: url(/public/Images/pexels-stein-egil-liland-3408744.jpg);
+    /* background-image: url(/public/Images/pexels-stein-egil-liland-3408744.jpg); 
+    */
+    background-color:black;
     background-repeat: no-repeat;
     height: 350px;
     font-weight: bold;
-    width: auto;
+   margin-left: 30px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+
 }
 
 .text-header{

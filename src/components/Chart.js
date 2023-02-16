@@ -2,6 +2,7 @@ import React from 'react'
 import './Chart.css'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'recharts';
 import { AreaChart, Area } from 'recharts';
+import { RadialBarChart, RadialBar } from 'recharts';
 
 
 const Chart = () => {
@@ -134,10 +135,30 @@ const Chart = () => {
         </AreaChart>
         </div>
        <div>
-       <h2 className=''> Analytics Performance</h2>
+       <h2 className='sect2-title'> Analytics Performance</h2>
+       <BarChart
+          className="chart-bar" 
+          width={500}
+          height={350}
+          data={data}
+          margin={{
+            top: 60,
+            right: 30,
+            left: 20,
+            bottom: 10,
+          }}
+        >
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Bar dataKey="pv" fill="#8884d8" />
+          <Bar dataKey="uv" fill="#82ca9d" />
+        </BarChart>
         </div>
       </div> 
-
+      
+      <div className='dash-home-sect3'>
+        
+      </div>  
 
     </div>
   )

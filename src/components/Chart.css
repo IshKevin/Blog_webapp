@@ -21,9 +21,13 @@
 .card-layout {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -0.25rem;
-    margin-right: -0.25rem;
+    /* margin-left: -0.25rem;
+    margin-right: -0.25rem; */
     justify-content: space-between;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-layout__item {
@@ -40,4 +44,18 @@
 
 .card-exp{
     font-size: 15px;
+}
+
+.chart-bar{
+    overflow-y: hidden;
+}
+
+.dash-home-sect2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

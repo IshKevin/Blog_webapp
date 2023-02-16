@@ -2,7 +2,9 @@ import React from 'react'
 
 const Chart = () => {
   return (
-    <div>Chart maker</div>
+    <>
+    <h2 className='dash-home-title'> WELCOME TO DASHBOARD</h2>    
+    </>
   )
 }
 

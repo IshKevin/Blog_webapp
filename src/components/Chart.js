@@ -12,36 +12,42 @@ const Chart = () => {
     uv: 4000,
     pv: 2400,
     amt: 2400,
+    fill: '#8884d8',
   },
   {
     name: 'Feb',
     uv: 3000,
     pv: 1398,
     amt: 2210,
+    fill: '#83a6ed',
   },
   {
     name: 'Mar',
     uv: 2000,
     pv: 9800,
     amt: 2290,
+    fill: '#8dd1e1',
   },
   {
     name: 'Apr',
     uv: 2780,
     pv: 3908,
     amt: 2000,
+    fill: '#82ca9d',
   },
   {
     name: 'May',
     uv: 1890,
     pv: 4800,
     amt: 2181,
+    fill: '#a4de6c',
   },
   {
     name: 'Jun',
     uv: 2390,
     pv: 3800,
     amt: 2500,
+    fill: '#d0ed57',
   },
  
 ];
@@ -106,11 +112,11 @@ const Chart = () => {
 
     <div className='dash-home-sect2'>
         <div>
-        <h2 className=''>Organic Visits & Conversions</h2>
+        <h2 className='sect2-title'>Organic Visits & Conversions</h2>
         <AreaChart
           className="chart-bar" 
           width={600}
-          height={300}
+          height={350}
           data={data}
           margin={{
             top: 60,

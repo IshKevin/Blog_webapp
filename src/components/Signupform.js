@@ -10,6 +10,8 @@ const REGISTER_URL = "https://newblog-m4im.onrender.com/api/auth/register";
 
 const Signup = () => {
 const  {register,handleSubmit,formState:{errors},reset} = useForm({});
+const navigate= useNavigate();
+
   
   // useEffect(() =>{
   //   userRef.current.focus();
@@ -46,6 +48,7 @@ const  {register,handleSubmit,formState:{errors},reset} = useForm({});
     try {
   const response = await  axios.post("https://newblog-m4im.onrender.com/api/auth/signup", data);
     console.log(response);
+    navigate('/Dashhome');
     } catch (error) {
       console.log(error.response);
     }

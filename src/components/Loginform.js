@@ -25,7 +25,8 @@ const Loginform = () => {
     useEffect(() => {
         setErrMsg('');
     }, [username, password])
-
+    const navigate= useNavigate();
+   
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(username, password);
@@ -42,6 +43,7 @@ const Loginform = () => {
             setUser('');
             setPwd('');
             setSuccess(true);
+            navigate('/Dashhome');
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');

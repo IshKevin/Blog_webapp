@@ -4,6 +4,7 @@ import './signup.css'
 import Navbar from './Navbar'
 import axios from "axios";
 import {useForm}  from  "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 
 const REGISTER_URL = "https://newblog-m4im.onrender.com/api/auth/register";
 

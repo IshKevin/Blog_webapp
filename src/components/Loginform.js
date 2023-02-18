@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import AuthContext from '../context/AuthProvider'
 import './Login.css'
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 const LOGIN_URL = "https://newblog-m4im.onrender.com/api/auth/login";
 
 
@@ -43,7 +44,7 @@ const Loginform = () => {
             setUser('');
             setPwd('');
             setSuccess(true);
-            navigate('/Dashhome');
+            navigate('/dashboard');
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');

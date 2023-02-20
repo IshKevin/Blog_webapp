@@ -44,7 +44,7 @@ const Loginform = () => {
             setUser('');
             setPwd('');
             setSuccess(true);
-            navigate('/dashboard');
+            navigate('/Dashhome');
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');

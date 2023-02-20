@@ -105,7 +105,6 @@ const Chart = () => {
            <BarChart className="chart-bar" width={200} height={110} data={data}>
           <Bar dataKey="pv" fill="#8884d8" overflow={'hidden'} />
         </BarChart>
-        //this code is for bar chart 
 
         </div>   
         </div>      
